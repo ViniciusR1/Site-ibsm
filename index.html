@@ -7,137 +7,70 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
-  <!-- Banner no topo -->
-  <img src="img/banner-topo.jpg" alt="Banner da Igreja" class="banner-topo">
+  <div id="cronometro-cantata" class="cronometro-container">
+    <p>Faltam <span id="dias"></span>d <span id="horas"></span>h <span id="minutos"></span>m <span id="segundos"></span>s para a Cantata de Páscoa!</p>
+  </div>
 
   <header>
-    <h1>Igreja Batista em San Martin</h1>
-    <nav>
-      <ul>
-        <li><a href="#quem-somos" class="ativo">Quem Somos</a></li>
-        <li><a href="#ministerios">Ministérios</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#noticias">Notícias</a></li>
-        <li><a href="#escala">Escala</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <img src="img/banner-topo.jpg" alt="Banner" class="banner-topo">
+    <div class="container">
+      <h1>Igreja Batista em San Martin</h1>
+      <nav>
+        <ul>
+          <li><a href="#quem-somos" class="ativo">Quem Somos</a></li>
+          <li><a href="#ministerios">Ministérios</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#escala">Escala</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-
-  <div class="slider">
-    <img src="img/slide1.jpg" alt="Slide 1">
-    <img src="img/slide2.jpg" alt="Slide 2">
-    <img src="img/slide3.jpg" alt="Slide 3">
-  </div>
 
   <main>
     <section id="quem-somos" class="aba ativa">
       <h2>Quem Somos</h2>
       <p>A Igreja Batista em San Martin foi fundada com o propósito de levar a mensagem do evangelho ao coração do bairro de San Martin, em Recife – PE. Sua trajetória começou há mais de seis décadas, movida pela fé e pelo desejo de um grupo de irmãos em Cristo que sonhavam com uma comunidade de adoração, comunhão e serviço.</p>
-    
-      <p>Desde os primeiros cultos realizados em lares e espaços improvisados, a igreja cresceu em número e estrutura, tornando-se uma referência espiritual e social na região. Ao longo dos anos, muitas famílias foram alcançadas, gerações foram formadas na fé, e novos ministérios nasceram para atender às necessidades da comunidade.</p>
-    
-      <p>A igreja sempre esteve presente em momentos importantes do bairro, oferecendo apoio espiritual, social e emocional. Projetos com crianças, jovens, adultos e idosos marcaram e continuam marcando sua história, com cultos edificantes, evangelismos, ações sociais, retiros e eventos que fortalecem a unidade do corpo de Cristo.</p>
-    
-      <p>Hoje, a Igreja Batista em San Martin celebra seus 62 anos de existência com gratidão a Deus, reafirmando seu compromisso com a verdade bíblica, a evangelização e o amor ao próximo. Continuamos firmes no propósito de ser luz no bairro, espalhando esperança, fé e transformação para as próximas gerações.</p>
-    </section>
-    
+
+  <p>Desde os primeiros cultos realizados em lares e espaços improvisados, a igreja cresceu em número e estrutura, tornando-se uma referência espiritual e social na região. Ao longo dos anos, muitas famílias foram alcançadas, gerações foram formadas na fé, e novos ministérios nasceram para atender às necessidades da comunidade.</p>
+
+  <p>A igreja sempre esteve presente em momentos importantes do bairro, oferecendo apoio espiritual, social e emocional. Projetos com crianças, jovens, adultos e idosos marcaram e continuam marcando sua história, com cultos edificantes, evangelismos, ações sociais, retiros e eventos que fortalecem a unidade do corpo de Cristo.</p>
+
+  <p>Hoje, a Igreja Batista em San Martin celebra seus 62 anos de existência com gratidão a Deus, reafirmando seu compromisso com a verdade bíblica, a evangelização e o amor ao próximo. Continuamos firmes no propósito de ser luz no bairro, espalhando esperança, fé e transformação para as próximas gerações.</p>
+</section>
+
     <section id="ministerios" class="aba">
       <h2>Ministérios e Cargos</h2>
       <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Cargo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>João da Silva</td>
-            <td>Presidente</td>
-          </tr>
-          <tr>
-            <td>Maria Souza</td>
-            <td>Vice-presidente</td>
-          </tr>
-          <tr>
-            <td>Lucas Alves</td>
-            <td>Ministério da Juventude</td>
-          </tr>
-          <tr>
-            <td>Ana Paula</td>
-            <td>Ação Social</td>
-          </tr>
-          <tr>
-            <td>José Lima</td>
-            <td>Diácono</td>
-          </tr>
-          <tr>
-            <td>Carla Rocha</td>
-            <td>Diaconisa</td>
-          </tr>
-        </tbody>
+        <tr><th>Cargo</th><th>Responsável</th></tr>
+        <tr><td>Presidente</td><td>João da Silva</td></tr>
+        <tr><td>Vice-presidente</td><td>Maria Souza</td></tr>
+        <tr><td>Ministério da Juventude</td><td>Lucas Alves</td></tr>
       </table>
     </section>
-    
-      <section id="agenda" class="aba">
+
+    <section id="agenda" class="aba">
       <h2>Agenda de Cultos</h2>
       <p>Domingo - Culto da Família: 18h<br>Quarta-feira - Culto de Oração: 20h</p>
     </section>
 
-    <section id="galeria" class="aba">
-      <h2>Galeria de Fotos</h2>
-      <p>Em breve!</p>
-    </section>
+    <section id="galeria" class="aba"><h2>Galeria de Fotos</h2><p>Em breve!</p></section>
 
-    <section id="noticias" class="aba">
-      <h2>Notícias</h2>
-      <div id="noticias-lista"></div>
-    </section>
+    <section id="noticias" class="aba"><h2>Notícias</h2><div id="noticias-lista"></div></section>
 
     <section id="escala" class="aba">
       <h2>Escala de Cultos</h2>
       <table id="tabela-escala">
         <thead>
-          <tr>
-            <th>Data</th>
-            <th>Turno</th>
-            <th>Dirigente</th>
-            <th>Pregador</th>
-          </tr>
+          <tr><th>Data</th><th>Turno</th><th>Dirigente</th><th>Pregador</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>10/04/2025</td>
-            <td>Manhã</td>
-            <td>Maria Souza</td>
-            <td>João da Silva</td>
-          </tr>
-          <tr>
-            <td>10/04/2025</td>
-            <td>Noite</td>
-            <td>Lucas Alves</td>
-            <td>Carla Rocha</td>
-          </tr>
-          <!-- Adicionar mais na escala -->
-          <tr>
-            <td>17/04/2025</td>
-            <td>Manhã</td>
-            <td>José Lima</td>
-            <td>Ana Paula</td>
-          </tr>
-          <tr>
-            <td>17/04/2025</td>
-            <td>Noite</td>
-            <td>Carla Rocha</td>
-            <td>Lucas Alves</td>
-          </tr>
+          <tr><td>20/04/2025</td><td>Noite</td><td>João</td><td>Maria</td></tr>
         </tbody>
       </table>
     </section>
-    
 
     <section id="contato" class="aba">
       <h2>Contato</h2>
@@ -151,7 +84,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Igreja Batista em San Martin - Recife</p>
+    <p>&copy; 2025 Igreja Batista em San Martin</p>
   </footer>
 
   <script src="script.js"></script>

@@ -54,7 +54,7 @@ document.querySelectorAll('nav a').forEach(link => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
-
+// slider
 let slideIndex = 0;
 const imagens = document.querySelectorAll(".slider img");
 function mostrarSlide() {
@@ -65,7 +65,7 @@ function mostrarSlide() {
 }
 setInterval(mostrarSlide, 4000);
 mostrarSlide();
-
+// noticias
 fetch('noticias.json')
   .then(res => res.json())
   .then(data => {
@@ -81,7 +81,7 @@ fetch('noticias.json')
       container.appendChild(div);
     });
   });
-
+// escalas
   fetch('escala.json')
   .then(res => res.json())
   .then(data => {
@@ -97,3 +97,54 @@ fetch('noticias.json')
       tbody.appendChild(tr);
     });
   });
+  // Carregar Devocionais Diárias
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch('devocionais.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.querySelector('.devocionais');
+        data.forEach(devocional => {
+          const bloco = document.createElement('div');
+          bloco.classList.add('devocional');
+          bloco.innerHTML = `
+            <h3>${devocional.titulo}</h3>
+            <p>${devocional.conteudo.replace(/\n/g, '<br>')}</p>
+          `;
+          container.appendChild(bloco);
+        });
+      })
+      .catch(error => console.error('Erro ao carregar devocionais:', error));
+  });
+  
+// eventos
+fetch('eventos.json')
+  .then(response => response.json())
+  .then(eventos => {
+    const container = document.getElementById('cards-eventos');
+    eventos.forEach(evento => {
+      const card = document.createElement('div');
+      card.className = 'card-evento';
+      card.innerHTML = `
+        <h3>${evento.titulo}</h3>
+        <p><strong>Data:</strong> ${evento.data}</p>
+        <p><strong>Hora:</strong> ${evento.hora}</p>
+        <p>${evento.descricao}</p>
+      `;
+      container.appendChild(card);
+    });
+  })
+  .catch(error => {
+    console.error('Erro ao carregar os eventos:', error);
+  });
+  //Click aba
+  function mostrarAba(id) {
+    const abas = document.querySelectorAll('.aba');
+    abas.forEach(aba => aba.style.display = 'none');
+    
+    const abaAtiva = document.getElementById(id);
+    if (abaAtiva) {
+      abaAtiva.style.display = 'block';
+    }
+  }
+
+

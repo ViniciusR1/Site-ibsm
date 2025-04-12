@@ -1,14 +1,29 @@
 
 [
   {
-    "titulo": "Culto da Família",
-    "texto": "Culto especial da família neste domingo às 18h.",
-    "data": "12/04/2025"
+    "titulo": "EBD",
+    "texto": "Escola bíblica dominical todo domingo às 09h.",
+    "data": "11/04/2025"
   },
   {
-    "titulo": "Reunião de Oração",
-    "texto": "Participe da reunião de oração toda quarta às 20h.",
-    "data": "10/04/2025"
+    "titulo": "Culto Matinal",
+    "texto": "Culto Matinal aos domingo às 10h.",
+    "data": "11/04/2025"
+  },
+  {
+    "titulo": "Culto Noturno",
+    "texto": "Culto Noturno aos domingo às 18h.",
+    "data": "11/04/2025"
+  },
+  {
+    "titulo": "Culto de Oração",
+    "texto": "Participe da reunião de oração toda quarta às 19h.",
+    "data": "11/04/2025"
+  },
+  {
+    "titulo": "Cantata de Páscoa",
+    "texto": "Participe da Cantata de Páscoa - 20 de Abril às 18h na Igreja Batista em San Martin!",
+    "data": "11/04/2025"
   }
   
 ]

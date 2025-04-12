@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Igreja Batista em San Martin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div id="cronometro-cantata" class="cronometro-container">
-    <p>Faltam <span id="dias"></span>d <span id="horas"></span>h <span id="minutos"></span>m <span id="segundos"></span>s para a Cantata de Páscoa!</p>
+    <p>Faltam <span id="dias"></span>d <span id="horas"></span>h <span id="minutos"></span>m <span
+        id="segundos"></span>s para a Cantata de Páscoa!</p>
   </div>
 
   <header>
@@ -17,20 +20,56 @@
       <h1>Igreja Batista em San Martin</h1>
       <nav>
         <ul>
-          <li><a href="#quem-somos" class="ativo">Quem Somos</a></li>
-          <li><a href="#ministerios">Ministérios</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#noticias">Notícias</a></li>
-          <li><a href="#escala">Escala</a></li>
+          <li class="menu-item">
+            <a href="#">Institucional</a>
+            <ul class="submenu">
+              <li><a href="#nossa-historia">Nossa história</a></li>
+              <li><a href="#ministerios">Ministérios</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#">Programação</a>
+            <ul class="submenu">
+              <li><a href="#agenda">Agenda</a></li>
+              <li><a href="#escala">Escala</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#">Conteúdo</a>
+            <ul class="submenu">
+              <li><a href="#noticias">Notícias</a></li>
+              <li><a href="#devocionais">Devocionais</a></li>
+            </ul>
+            <li><a href="#pgds">PGDs</a></li>
+          </li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-    </div>
+      <!--Eventos-->
+      <section id="eventos">
+        <h2>Próximos Eventos</h2>
+        <div class="eventos-container">
+          <div class="evento-card">
+            <h3>Cantata de Páscoa</h3>
+            <p><strong>Data:</strong> 20 de Abril de 2025</p>
+            <p><strong>Hora:</strong> 18h</p>
+            <p class="descricao">Venha celebrar conosco a ressurreição de Cristo com louvores e adoração!</p>
+          </div>
+          <!-- <div class="evento-card">
+            <h3>Congresso de Jovens</h3>
+            <p><strong>Data:</strong> 27 e 28 de Abril de 2025</p>
+            <p><strong>Hora:</strong> 18h</p>
+            <p class="descricao">Dois dias de louvor, palavra e comunhão. Não perca!</p>
+          </div>
+        </div> -->
+      </section>
+
+
   </header>
 
   <main>
-    <section id="quem-somos" class="aba ativa">
+    </section>
+    <section id="nossa-historia" class="aba">
       <h2>Quem Somos</h2>
       <p>A Igreja Batista em San Martin foi fundada com o propósito de levar a mensagem do evangelho ao coração do bairro de San Martin, em Recife – PE. Sua trajetória começou há mais de seis décadas, movida pela fé e pelo desejo de um grupo de irmãos em Cristo que sonhavam com uma comunidade de adoração, comunhão e serviço.</p>
 
@@ -42,35 +81,201 @@
 </section>
 
     <section id="ministerios" class="aba">
-      <h2>Ministérios e Cargos</h2>
-      <table>
-        <tr><th>Cargo</th><th>Responsável</th></tr>
-        <tr><td>Presidente</td><td>João da Silva</td></tr>
-        <tr><td>Vice-presidente</td><td>Maria Souza</td></tr>
-        <tr><td>Ministério da Juventude</td><td>Lucas Alves</td></tr>
-      </table>
+      <h2>Diretoria da Igreja</h2>
+      <p>Veja abaixo os responsáveis pelas principais áreas administrativas e ministeriais da Igreja Batista em San
+        Martin:</p>
+
+      <div class="tabelas-diretoria">
+        <!-- Tabela 1  Diretoria da igreja-->
+        <table>
+          <thead>
+            <tr>
+              <th>Cargo</th>
+              <th>Responsável</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Presidente</td>
+              <td>Pr. Samuel Couto</td>
+            </tr>
+            <tr>
+              <td>1º Vice-presidente</td>
+              <td>Kátia Porter</td>
+            </tr>
+            <tr>
+              <td>2º Vice-presidente</td>
+              <td>Dc. Evilásio</td>
+            </tr>
+            <tr>
+              <td>1ª Secretária</td>
+              <td>Dc. Claudinete</td>
+            </tr>
+            <tr>
+              <td>2ª Secretária</td>
+              <td>Dc. Irany</td>
+            </tr>
+            <tr>
+              <td>1º Tesoureiro</td>
+              <td>Iramar</td>
+            </tr>
+            <tr>
+              <td>2ª Tesoureira</td>
+              <td>Sônia</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Tabela 2 outros ministerios -->
+        <table>
+          <thead>
+            <tr>
+              <th>Cargo</th>
+              <th>Responsável</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ministério da Juventude</td>
+              <td>Em breve</td>
+            </tr>
+            <tr>
+              <td>Ministério de Música</td>
+              <td>Em breve</td>
+            </tr>
+            <tr>
+              <td>Ministério Infantil</td>
+              <td>Em breve</td>
+            </tr>
+            <tr>
+              <td>Evangelismo</td>
+              <td>Em breve</td>
+            </tr>
+            <tr>
+              <td>Ação Social</td>
+              <td>Em breve</td>
+            </tr>
+            <tr>
+              <td>Diáconos</td>
+              <td>Em breve</td>
+            </tr>
+            <tr>
+              <td>Diáconos</td>
+              <td>Em breve</td>
+            </tr>
+            <tr>
+              <td>Diáconos</td>
+              <td>Em breve</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
+
+
 
     <section id="agenda" class="aba">
       <h2>Agenda de Cultos</h2>
-      <p>Domingo - Culto da Família: 18h<br>Quarta-feira - Culto de Oração: 20h</p>
+      <p>Domingo - EBD: 09h<br>Culto Matinal: 10:15h</p>
+      <p>Domingo - Culto Noturno: 18h<br>Quarta-feira - Culto de Oração: 20h</p>
     </section>
 
-    <section id="galeria" class="aba"><h2>Galeria de Fotos</h2><p>Em breve!</p></section>
+    <section id="devocionais" class="aba">
+      <h2>Devocionais Diárias</h2>
+      <div class="devocionais"></div>
+   
+        <article class="devocional">
+          <h3>🗓️ 12 de Abril de 2025</h3>
+          <p><strong>Titulo:</strong> VIVENDO A PALAVRA DE DEUS NO DIA A DIA
+          <p><strong>Mensagem:</strong>
+            A vida cotidiana pode às vezes parecer um desafio, mas é fundamental lembrar que a Palavra de Deus está sempre presente para nos guiar e fortalecer. No livro de Salmos 119:105, está escrito: “A Tua palavra é lâmpada para os meus pés e luz para o meu caminho.” Este versículo nos lembra da importância de integrar os ensinamentos bíblicos em nossas rotinas diárias.
+            
+            Viver a Palavra de Deus não significa apenas ouvir mensagens no templo, mas colocá-las em prática em cada situação da vida. Em momentos de dificuldades, como conflitos no trabalho ou problemas familiares, podemos buscar em Filipenses 4:6-7 a paz que excede todo entendimento. Orar e confiar em Deus transforma nosso olhar diante dos desafios.
+            
+            É essencial também cultivar relacionamentos saudáveis. Em Provérbios 27:17, encontramos que “Assim como o ferro afia o ferro, o homem afia o seu companheiro.” Estar cercado de pessoas que compartilham a fé nos encoraja a viver de acordo com os princípios cristãos. Participar de grupos de estudos bíblicos e comunidades de fé fortalece nossa caminhada.
+            
+            Por fim, lembrar da importância de servir ao próximo. Em Mateus 20:28, Jesus nos ensina que não veio para ser servido, mas para servir. Cada ato de bondade reflete o amor de Cristo e transforma o ambiente ao nosso redor.
+            
+            Viver a Palavra de Deus no cotidiano é um convite a transformar nossa vida à luz dos ensinamentos bíblicos. Ao integrar essas verdades em nossas práticas diárias, encontramos paz, propósito, e um caminho iluminado. Querido leitor, que sua jornada seja plena de amor e esperança, seguindo os passos de Cristo.</p>
+        </article>
 
-    <section id="noticias" class="aba"><h2>Notícias</h2><div id="noticias-lista"></div></section>
+        <!-- <article class="devocional">
+          <h3>🗓️ 10 de Abril de 2025</h3>
+          <p><strong>Versículo:</strong> "O Senhor é o meu pastor; nada me faltará." – Salmos 23:1</p>
+          <p><strong>Mensagem:</strong> Lembre-se de que Deus cuida de cada detalhe da sua vida. Ele é o seu Pastor
+            fiel.</p>
+        </article> -->
+      </div>
+    </section>
+
+
+    <section id="noticias" class="aba">
+      <h2>Notícias</h2>
+      <div id="noticias-lista"></div>
+    </section>
 
     <section id="escala" class="aba">
       <h2>Escala de Cultos</h2>
       <table id="tabela-escala">
         <thead>
-          <tr><th>Data</th><th>Turno</th><th>Dirigente</th><th>Pregador</th></tr>
+          <tr>
+            <th>Data</th>
+            <th>Turno</th>
+            <th>Dirigente</th>
+            <th>Pregador</th>
+          </tr>
         </thead>
         <tbody>
-          <tr><td>20/04/2025</td><td>Noite</td><td>João</td><td>Maria</td></tr>
+          <tr>
+            <td>20/04/2025</td>
+            <td>Noite</td>
+            <td>João</td>
+            <td>Maria</td>
+          </tr>
         </tbody>
       </table>
     </section>
+
+    <section id="pgds" class="aba">
+      <h2>Pequenos Grupos de Discipulado (PGDs)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Responsável</th>
+            <th>Dia</th>
+            <th>Endereço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Irmã Necy</td>
+            <td>Terça-feira</td>
+            <td>Rua Cafelândia, 335 - San Martin</td>
+          </tr>
+          <tr>
+            <td>Irmã Cristina</td>
+            <td>Terça-feira</td>
+            <td>Rua Pinguim, 64 - San Martin</td>
+          </tr>
+          <tr>
+          <td>Irmã Ana Oliveira</td>
+            <td>Terça-feira</td>
+            <td>Rua Pedro Boulitreau, 414 -1º Andar San Martin</td>
+          </tr>
+          <tr>
+            <td>Irmã Hélida</td>
+              <td>Quinta-Feira</td>
+              <td>Rua Ourém, 227 - Bloco 6, Apt 103 - San Martin</td>
+            </tr>
+            <tr>
+              <td>Irmã Lilair</td>
+                <td>Quinta-Feira</td>
+                <td>Rua Arsênio Calaça, 2016 - San Martin</td>
+              </tr>
+        </tbody>
+      </table>
+    </section>
+    
 
     <section id="contato" class="aba">
       <h2>Contato</h2>
@@ -81,12 +286,27 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
+
+    
+    
+
+    <section id="eventos" class="eventos">
+      <h2>Eventos Futuros</h2>
+      <div id="cards-eventos" class="cards-container">
+        <!-- Os eventos serão inseridos aqui via JavaScript -->
+      </div>
+    </section>
+
+    <script src="eventos.js"></script>
   </main>
 
   <footer>
     <p>&copy; 2025 Igreja Batista em San Martin</p>
+    <p>Dízimos e Ofertas: Bradesco Ag: 1230-0 - Conta: 20855-8</p>
+    <p>CNPJ: 08.645.285/0001-20 - PIX - 08.645.285/0001-20</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>

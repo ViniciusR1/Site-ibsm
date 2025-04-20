@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0 auto;
   font-family: Arial, sans-serif;
@@ -9,6 +14,7 @@ body {
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .banner-topo {
@@ -157,12 +163,53 @@ form button:hover {
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
-  background: rgba(12, 7, 7, 0.6);
+  background-color: #222;
   color: white;
-  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
 }
+
+.redes-sociais {
+  margin: 20px 0;
+}
+
+.botao-social {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 10px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-social:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Cores específicas de cada rede */
+.botao-social.facebook {
+  background-color: #1877f2;
+}
+
+.botao-social.instagram {
+  background-color: #e4405f;
+}
+
+.botao-social.youtube {
+  background-color: #ff0000;
+}
+
+.creditos {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 15px;
+}
+
 .aba {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -217,7 +264,7 @@ footer {
   text-align: center;
   margin: 40px auto;
   padding: 20px;
-  background-color: rgba(15, 39, 88, 0.9);
+  background-color: rgba(46, 52, 58, 0.9);
   border-radius: 10px;
   max-width: 1000px;
 }

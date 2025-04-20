@@ -36,7 +36,7 @@ atualizarContador();
 window.addEventListener("load", () => {
   const popup = document.createElement("div");
   popup.id = "popup-lembrete";
-  popup.textContent = "🎶 Amanhã!! Cantata da páscoa - 20 de Abril às 18h na Igreja Batista em San Martin!";
+  popup.textContent = "🎶Não Perca! Hoje a Cantata da páscoa - 20 de Abril às 18h na Igreja Batista em San Martin!";
   document.body.appendChild(popup);
   popup.style.display = "block";
   setTimeout(() => {

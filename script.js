@@ -12,7 +12,8 @@ document.querySelectorAll('nav a').forEach(link => {
 });
 
 // Contador da Cantata de Páscoa
-const dataCantata = new Date("2025-04-20T19:00:00");
+/*
+const dataCantata = new Date("2025-04-20T18:00:00");
 function atualizarContador() {
   const agora = new Date();
   const diff = dataCantata - agora;
@@ -31,8 +32,10 @@ function atualizarContador() {
 }
 setInterval(atualizarContador, 1000);
 atualizarContador();
+*/
 
 // Lembrete ao acessar a página
+/*
 window.addEventListener("load", () => {
   const popup = document.createElement("div");
   popup.id = "popup-lembrete";
@@ -54,6 +57,7 @@ document.querySelectorAll('nav a').forEach(link => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+*/
 // slider
 let slideIndex = 0;
 const imagens = document.querySelectorAll(".slider img");
@@ -65,6 +69,7 @@ function mostrarSlide() {
 }
 setInterval(mostrarSlide, 4000);
 mostrarSlide();
+
 // noticias
 fetch('noticias.json')
   .then(res => res.json())
@@ -80,7 +85,11 @@ fetch('noticias.json')
       `;
       container.appendChild(div);
     });
+  })
+  .catch(error => {
+    console.error('Erro ao carregar as notícias:', error);
   });
+
 // escalas
   fetch('escala.json')
   .then(res => res.json())
@@ -98,23 +107,42 @@ fetch('noticias.json')
     });
   });
   // Carregar Devocionais Diárias
-  document.addEventListener("DOMContentLoaded", () => {
-    fetch('devocionais.json')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.querySelector('.devocionais');
-        data.forEach(devocional => {
-          const bloco = document.createElement('div');
-          bloco.classList.add('devocional');
-          bloco.innerHTML = `
-            <h3>${devocional.titulo}</h3>
-            <p>${devocional.conteudo.replace(/\n/g, '<br>')}</p>
-          `;
-          container.appendChild(bloco);
-        });
-      })
-      .catch(error => console.error('Erro ao carregar devocionais:', error));
+  fetch("devocionais.json")
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("devocionais-container");
+
+    data.forEach((devocional, index) => {
+      const devBox = document.createElement("div");
+      devBox.classList.add("devocional");
+
+      devBox.innerHTML = `
+        <div class="header" onclick="toggleDevocional(${index})">
+          <span>🗓️ ${devocional.data} - ${devocional.titulo}</span>
+          <button class="toggle-btn" id="toggle-btn-${index}">-</button>
+        </div>
+        <div class="mensagem" id="mensagem-${index}">
+          <p>${devocional.mensagem}</p>
+        </div>
+      `;
+
+      container.appendChild(devBox);
+    });
   });
+
+function toggleDevocional(index) {
+  const mensagem = document.getElementById(`mensagem-${index}`);
+  const btn = document.getElementById(`toggle-btn-${index}`);
+  
+  if (mensagem.style.display === "none") {
+    mensagem.style.display = "block";
+    btn.textContent = "-";
+  } else {
+    mensagem.style.display = "none";
+    btn.textContent = "+";
+  }
+}
+
   
 // eventos
 fetch('eventos.json')
@@ -146,5 +174,32 @@ fetch('eventos.json')
       abaAtiva.style.display = 'block';
     }
   }
+  // Carregar culto ao vivo
+  function verificarHorarioCulto() {
+    const agora = new Date();
+    const dia = agora.getDay(); // 0 = domingo, 3 = quarta
+    const hora = agora.getHours();
+  
+    let mostrarLive = false;
+  
+    // Domingo: 9h00 às 11h00 e 18h00 às 20h00
+    if ((dia === 0 && hora >= 9 && hora < 11) || (dia === 0 && hora >= 18 && hora < 20)) {
+      mostrarLive = true;
+    }
+  
+    // Quarta-feira: 19h00 às 21h00
+    if (dia === 3 && hora >= 19 && hora < 21) {
+      mostrarLive = true;
+    }
+  
+    if (mostrarLive) {
+      document.getElementById("live-section").style.display = "block";
+    }
+  }
+  
+  window.addEventListener("load", verificarHorarioCulto);
+  
+  
+
 
 

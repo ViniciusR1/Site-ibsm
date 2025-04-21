@@ -11,10 +11,11 @@
 </head>
 
 <body>
-  <div id="cronometro-cantata" class="cronometro-container">
+  
+  <!-- <div id="cronometro-cantata" class="cronometro-container">
     <p>Faltam <span id="dias"></span>d <span id="horas"></span>h <span id="minutos"></span>m <span
-        id="segundos"></span>s para a Cantata de Páscoa!</p>
-  </div>
+        id="segundos"></span>s </p>
+  </div> -->
 
   <header>
     <img src="img/banner-topo.jpg" alt="Banner" class="banner-topo">
@@ -52,7 +53,7 @@
         <h2>Próximos Eventos</h2>
         <div class="eventos-container">
           <div class="evento-card">
-            <h3>Cantata de Páscoa</h3>
+            <!-- <h3>Cantata de Páscoa</h3>
             <p><strong>Data:</strong> 20 de Abril de 2025</p>
             <p><strong>Hora:</strong> 18h</p>
             <p class="descricao">Venha celebrar conosco a ressurreição de Cristo com louvores e adoração!</p>
@@ -62,7 +63,8 @@
             <p><strong>Data:</strong> 20 de Abril de 2025</p>
             <p><strong>Hora:</strong> 07:30h</p>
             <p class="descricao">Café de comunhão da páscoa com os irmão, venha participar!</p>
-          </div>
+          </div> -->
+          <p><strong>Em Breve</strong></p>
         </div> 
       </section>
 
@@ -182,15 +184,16 @@
 
     <section id="agenda" class="aba">
       <h2>Agenda de Cultos</h2>
-      <p>Domingo - EBD: 09h<br>Culto Matinal: 10:15h</p>
+      <p>Domingo - EBD: 09h <br>Domingo - Culto Matutino: 10:15h</p>
       <p>Domingo - Culto Noturno: 18h<br>Quarta-feira - Culto de Oração: 20h</p>
     </section>
 
     <section id="devocionais" class="aba">
       <h2>Devocionais Diárias</h2>
-      <div class="devocionais"></div>
-   
-        <article class="devocional">
+      <div id="devocionais-container"></div>
+    </section>
+    
+         <!-- <article class="devocional">
           <h3>🗓️ 12 de Abril de 2025</h3>
           <p><strong> VIVENDO A PALAVRA DE DEUS NO DIA A DIA </strong>
           <p><strong>Mensagem:</strong>
@@ -203,7 +206,7 @@
             Por fim, lembrar da importância de servir ao próximo. Em Mateus 20:28, Jesus nos ensina que não veio para ser servido, mas para servir. Cada ato de bondade reflete o amor de Cristo e transforma o ambiente ao nosso redor.
             
             Viver a Palavra de Deus no cotidiano é um convite a transformar nossa vida à luz dos ensinamentos bíblicos. Ao integrar essas verdades em nossas práticas diárias, encontramos paz, propósito, e um caminho iluminado. Querido leitor, que sua jornada seja plena de amor e esperança, seguindo os passos de Cristo.</p>
-        </article>
+        </article>  -->
 
         <!-- <article class="devocional">
           <h3>🗓️ 10 de Abril de 2025</h3>
@@ -232,12 +235,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>20/04/2025</td>
-            <td>Noite</td>
-            <td>João</td>
-            <td>Maria</td>
-          </tr>
         </tbody>
       </table>
     </section>
@@ -299,9 +296,22 @@
     <section id="eventos" class="eventos">
       <h2>Eventos Futuros</h2>
       <div id="cards-eventos" class="cards-container">
-        <!-- Os eventos serão inseridos aqui via JavaScript -->
+        <p><strong></strong></p>
       </div>
     </section>
+    
+    <section id="live-section" style="display: none;">
+      <div class="live-box">
+        <h2>🎥 Culto ao Vivo</h2>
+        <p>Estamos ao vivo agora! Assista e participe conosco.</p>
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/live_stream?channel=UCsXHyhsgGShFGWnvROabnkw&autoplay=1" frameborder="0" allowfullscreen></iframe>
+        <a href="https://www.youtube.com/@ibsmoficial/live" target="_blank" class="btn-live">🎬 Assista agora</a>
+      </div>
+    </section>
+    
+    
+    
+    
 
     <script src="eventos.js"></script>
   </main>
@@ -309,17 +319,24 @@
   <footer>
     <footer>
       <p>&copy; 2025 Igreja Batista em San Martin</p>
-      <div class="redes-sociais">
-        <a href="https://www.facebook.com/@igrejabatistaemsanmartin" target="_blank" class="botao-social facebook" title="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/ibsmoficial" target="_blank" class="botao-social instagram" title="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@ibsmoficial" target="_blank" class="botao-social youtube" title="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-      </div>
+      
+      
+      <section id="redes-sociais">
+        <h2 class="redes-sociais-titulo">Siga-nos nas redes sociais</h2>
+        <p><strong>Clique nos ícones abaixo:</strong></p>
+        <div class="icones-redes">
+          <a href="https://facebook.com/ibsmoficial" class="rede facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com/ibsmoficial" class="rede instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://youtube.com/@ibsmoficial" class="rede youtube" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </section>
+      
       <p class="creditos">Desenvolvido por <strong>Vinicius Rodrigues</strong></p>
     </footer>
     
